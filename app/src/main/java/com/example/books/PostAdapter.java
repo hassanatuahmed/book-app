@@ -17,12 +17,12 @@ import java.util.List;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
-        List<Books> postList;
+        List<Books> booksList;
         Context context;
 
-        public PostAdapter(Context context, List<Books> posts){
+        public PostAdapter(Context context, List<Books> books){
             this.context=context;
-            postList=posts;
+            booksList =books;
         }
 
         @NonNull
@@ -34,7 +34,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
         @Override
         public void onBindViewHolder(@NonNull PostViewHolder holder,  int position) {
-            Books book =postList.get(position);
+            Books book = booksList.get(position);
             holder.title.setText(book.getTitle());
             holder.author.setText(book.getAuthor());
             holder.publisher.setText(book.getPublisher());
@@ -48,11 +48,11 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
             holder.itemView.setOnClickListener( view -> {
                 Intent intent = new Intent(context,DetailActivity.class);
-                intent.putExtra("title",postList.get(position).getTitle());
-                intent.putExtra("author",postList.get(position).getAuthor());
-                intent.putExtra("publisher",postList.get(position).getPublisher());
-                intent.putExtra("price",postList.get(position).getPrice());
-                intent.putExtra("image",postList.get(position).getBook_image());
+                intent.putExtra("title", booksList.get(position).getTitle());
+                intent.putExtra("author", booksList.get(position).getAuthor());
+                intent.putExtra("publisher", booksList.get(position).getPublisher());
+                intent.putExtra("price", booksList.get(position).getPrice());
+                intent.putExtra("image", booksList.get(position).getBook_image());
                 context.startActivity(intent);
             });
 
@@ -60,7 +60,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
         @Override
         public int getItemCount() {
-            return postList.size();
+            return booksList.size();
         }
 
         public class PostViewHolder extends RecyclerView.ViewHolder{

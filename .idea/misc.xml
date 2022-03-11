@@ -3,10 +3,16 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.1295" />
+        <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/drawable/ic_baseline_dehaze_24.xml" value="0.1295" />
+        <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/drawable/ic_baseline_dehaze_24r.xml" value="0.1295" />
+        <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/layout/activity_book_mark_item.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/layout/activity_bookmark.xml" value="0.1621376811594203" />
         <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/layout/activity_detail.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/layout/activity_detail2.xml" value="0.17074275362318841" />
         <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/layout/activity_main.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/layout/item.xml" value="0.14" />
+        <entry key="..\:/Users/hassanatuah/AndroidStudioProjects/Books/app/src/main/res/menu/menu.xml" value="0.19895833333333332" />
       </map>
     </option>
   </component>
